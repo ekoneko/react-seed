@@ -1,6 +1,8 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
+const tsLoader = process.env.useBabel ? 'babel-loader' : 'awesome-typescript-loader'
+
 module.exports = {
     entry: {
         index: 'index',
@@ -17,7 +19,7 @@ module.exports = {
         rules: [
             {
                 test: /\.tsx?/,
-                loader: 'awesome-typescript-loader',
+                loader: tsLoader
             }, {
                 test: /\.css/,
                 loader: 'style-loader!css-loader',

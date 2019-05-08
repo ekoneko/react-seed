@@ -1,7 +1,0 @@
-{
-  "presets": ["env", "react", "typescript"],
-  "env": {
-    "development": {}
-  },
-  "plugins": []
-}

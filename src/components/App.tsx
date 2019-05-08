@@ -1,7 +1,9 @@
-import * as React from 'react'
+import React from "react"
 
-export default class App extends React.Component<{}, {}> {
-    render () {
-        return <div>Hello Cat</div>
-    }
+export interface AppProps {}
+export interface AppState {}
+export class App extends React.PureComponent<AppProps, AppState> {
+  render() {
+    return <div>Hello Cat</div>
+  }
 }

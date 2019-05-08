@@ -1,12 +1,12 @@
 {
-    "compilerOptions": {
-        "strictNullChecks": false,
-        "allowSyntheticDefaultImports": true,
-        "experimentalDecorators": true,
-        "declaration": false,
-        "lib": ["es2015", "dom", "dom.iterable", "scripthost"],
-        "outDir": "lib",
-        "jsx": "react"
-    },
-    "files": []
+  "compilerOptions": {
+    "strictNullChecks": false,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "declaration": false,
+    "lib": ["es2015", "dom", "dom.iterable", "scripthost"],
+    "outDir": "lib",
+    "jsx": "react"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts"]
 }

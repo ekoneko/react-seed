@@ -1,1 +1,1 @@
-Typescript + React + Webpack boilerplate
+Typescript + React boilerplate

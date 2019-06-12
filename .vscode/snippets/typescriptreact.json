@@ -1,0 +1,50 @@
+{
+  "React_Class": {
+    "prefix": "comp",
+    "body": [
+      "import React from \"react\"",
+      "",
+      "export interface ${TM_FILENAME_BASE}Props {}",
+      "export interface ${TM_FILENAME_BASE}State {}",
+      "export class ${TM_FILENAME_BASE} extends React.PureComponent<${TM_FILENAME_BASE}Props, ${TM_FILENAME_BASE}State> {",
+      "  render () {",
+      "    return (",
+      "      <div />",
+      "    )",
+      "  }",
+      "}"
+    ],
+    "description": "create React Class"
+  },
+  "HOC": {
+    "prefix": "hoc",
+    "body": [
+      "import React from \"react\"",
+      "",
+      "export interface ${TM_FILENAME_BASE}InjectProps {}",
+      "export interface ${TM_FILENAME_BASE}DependProps {}",
+      "export function with${TM_FILENAME_BASE}<OwnerProps>(WrappedComponent: React.ComponentType<OwnerProps & ${TM_FILENAME_BASE}InjectProps>) {",
+      "  return class ${TM_FILENAME_BASE}Hoc extends React.PureComponent<OwnerProps & ${TM_FILENAME_BASE}DependProps, {}> {",
+      "    render () {",
+      "      return (",
+      "        <WrappedComponent {...this.props} />",
+      "      )",
+      "    }",
+      "  }",
+      "}"
+    ],
+    "description": "create HOC"
+  },
+  "SFC": {
+    "prefix": "sfc",
+    "body": [
+      "import React from \"react\"",
+      "",
+      "export interface ${TM_FILENAME_BASE}Props {}",
+      "",
+      "export const ${TM_FILENAME_BASE}: React.SFC<${TM_FILENAME_BASE}Props> = (props) => {",
+      "  return <div />",
+      "}"
+    ]
+  }
+}
